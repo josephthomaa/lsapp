@@ -24,14 +24,17 @@ Route::get('/users/{id}',function($id){
     return "The id is ".$id;
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('pages.index');
-});
+});*/
 
-Route::get('/about',function(){
-    return view('pages.about');
-});
+Route::get('/','PagesController@Index');
+//Route::get('/about',function(){    return view('pages.about');});
+
+Route::get('/about', 'PagesController@About');
 
 Route::get('/services', 'PagesController@services');
+
+Route::resource('posts','PostsController');
 
     
