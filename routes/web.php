@@ -37,4 +37,6 @@ Route::get('/services', 'PagesController@services');
 
 Route::resource('posts','PostsController');
 
+Route::post('/store', 'PostsController@store')->name('store');
+
     

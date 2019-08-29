@@ -5,9 +5,10 @@
 <h3 style="padding-top:30px;">
     {{$post->title}}
 </h3>
-<p>{{ $post->body }}</p>
+<p>{!!$post->body!!}</p>
 <small>
     Posted on {{ $post->created_at }} 
 </small>
-      
+ <hr>
+ <a href="/posts/{{$post->id}}/edit"  class="btn btn-primary">edit</a>   
 @endsection
