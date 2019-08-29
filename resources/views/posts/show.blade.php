@@ -11,4 +11,10 @@
 </small>
  <hr>
  <a href="/posts/{{$post->id}}/edit"  class="btn btn-primary">edit</a>   
+
+ <form action="/posts/{{$post->id}}" method="post">
+    @method('delete')
+    @csrf
+<button type="submit" class="btn btn-dange">Delete</button>
+</form>
 @endsection
