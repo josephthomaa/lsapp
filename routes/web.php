@@ -40,3 +40,7 @@ Route::resource('posts','PostsController');
 Route::post('/store', 'PostsController@store')->name('store');
 
     
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

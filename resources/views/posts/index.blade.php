@@ -1,7 +1,7 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
-    <h3 style="padding-top:30px;">Blog Posts</h3>
+    <h3 style="padding:30px;">Blog Posts</h3>
     @if(count($posts)>0)
         @foreach($posts as $post)
             <div class="container">
@@ -13,4 +13,8 @@
     @else
         <p>No Posts Found</p>
     @endif    
+    <hr>
+<div class="container">
+    <a href="/posts/create">Create Post</a>
+</div>    
 @endsection

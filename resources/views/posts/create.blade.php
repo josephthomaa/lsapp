@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
     <h3 style="padding-top:30px;">Create new post</h3>
@@ -15,8 +15,5 @@
         
         <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'bodytext' );
-</script>
+
 @endsection

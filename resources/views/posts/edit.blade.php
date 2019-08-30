@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
     <h3 style="padding-top:30px;">Edit Post</h3>
